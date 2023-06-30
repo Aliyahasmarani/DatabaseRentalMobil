@@ -114,6 +114,7 @@ ALTER TABLE transaksi ADD CONSTRAINT FOREIGN KEY (id_sopir) REFERENCES sopir (id
 ALTER TABLE transaksi ADD CONSTRAINT FOREIGN KEY (id_kendaraan) REFERENCES kendaraan (id_kendaraan);
 ALTER TABLE sopir ADD CONSTRAINT fk_sopir_id_kend FOREIGN KEY (id_kendaraan) REFERENCES kendaraan (id_kendaraan);
 ```
+# SQL_CRUD
 ### CREATE
 ```sql
 INSERT INTO customer (id_customer, nama_cs, no_hp, alamat, email)
