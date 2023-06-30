@@ -221,7 +221,7 @@ DELETE FROM transaksi WHERE id_transaksi='01';
 
 > **Delete** : Fungsi ini digunakan untuk menghapus data yang sudah ada di dalam database menggunakan perintah SQL `DELETE FROM <table> WHERE <kondisi>`. Dengan fungsi ini, kita dapat menghapus data yang sudah tersimpan dalam database.
 
-# SQL JOIN
+# SQL_JOIN
 > ### *JOIN TABLE*
 > Operasi Join merupakan operasi yang digunakan untuk menggabungkan dua tabel atau lebih dengan hasil berupa gabungan dari kolom-kolom yang berasal dari tabel-tabel tersebut
 
