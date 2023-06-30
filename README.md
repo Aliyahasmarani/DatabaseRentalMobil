@@ -108,7 +108,7 @@ DESC transaksi;
 ![image](https://github.com/Aliyahasmarani/rental_mobilgadungan/assets/115197672/3c384364-bd03-472e-9109-814744b5854f)
 
 ### CREATE
-
+```sql
 INSERT INTO customer (id_customer, nama_cs, no_hp, alamat, email)
     ->     VALUES
     ->     ('CS001', 'ARUL', '089754637285', 'JL.ANGGREK', 'arul@gmail.com'),
@@ -145,6 +145,8 @@ INSERT INTO kendaraan (id_kendaraan, merk, warna, status_kdr, harga_sewa)
     ->     ('04', 'CS003', 'SP001', 'KDR005', '2023-11-15', '2023-12-15', '2023-12-16', 'SELESAI', '6000000', 'CASH'),
     ->     ('05', 'CS001', 'SP002', 'KDR001', '2023-05-05', '2023-05-06', '2023-05-07', 'SELESAI', '200000', 'DEBIT'),
     ->     ('06', 'CS002', 'SP001', 'KDR005', '2023-06-17', '2023-06-17', '2023-06-18', 'SELESAI', '6000000', 'CASH');
+```
+> **Create** : Fungsi ini digunakan untuk menambahkan data baru ke dalam database menggunakan perintah SQL `INSERT INTO <table> (field1, ..., fieldn) VALUES (value1, ..., valuen)`. Dengan fungsi ini, kita dapat menambahkan data baru ke dalam database.
 
 
 ### READ
@@ -166,3 +168,6 @@ SELECT * FROM kendaraan;
 SELECT * FROM transaksi;
 
 ![5](https://github.com/Aliyahasmarani/rental_mobilgadungan/assets/115197672/b9a3c03d-652c-4932-9b0f-19dc9a647704)
+
+> **Read** : Fungsi ini digunakan untuk membaca data dari database menggunakan perintah SQL `SELECT * FROM <table>`. Dengan fungsi ini, kita dapat membaca data yang sudah tersimpan dalam database sebelumnya yaitu data Kendaraan, Sopir, Customer, Transaksi, dan Laporan_Transaksi.
+
