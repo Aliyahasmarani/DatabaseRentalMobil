@@ -106,3 +106,72 @@ DESC customer;
 DESC transaksi;
 ```
 ![image](https://github.com/Aliyahasmarani/rental_mobilgadungan/assets/115197672/3c384364-bd03-472e-9109-814744b5854f)
+
+### SQL CURD Rental Mobil
+#### Create
+```sql
+INSERT INTO customer (id_customer, nama_cs, no_hp, alamat, email)
+    ->     VALUES
+    ->     ('CS001', 'ARUL', '089754637285', 'JL.ANGGREK', 'arul@gmail.com'),
+    ->     ('CS002', 'INAY', '089654236789', 'JL.MAWAR', 'inay@gmail.com'),
+    ->     ('CS003', 'RANI', '089172634563', 'JL.MELATI', 'rani@gmail.com'),
+    ->     ('CS004', 'FIA', '089876543245', 'JL.KEMUNING', 'fia@gmail.com'),
+    ->     ('CS005', 'FEBRI', '089764536276', 'JL.CURUG', 'febri@gmail.com'),
+    ->     ('CS006', 'MELATI', '089754636532', 'JL.KENANGA', 'melati@gmail.com');
+
+
+ INSERT INTO sopir (id_sopir, id_kendaraan, nama_sp, status_sp)
+    ->     VALUES
+    ->     ('SP001', 'KDR001', 'Janu', 'TERSEDIA'),
+    ->     ('SP002', 'KDR002', 'Rudi', 'TERSEDIA'),
+    ->     ('SP003', 'KDR003', 'Siti', 'TERSEDIA'),
+    ->     ('SP004', 'KDR004', 'Ahmad', 'TIDAK TERSEDIA'),
+    ->     ('SP005', 'KDR005', 'Lina', 'TIDAK TERSEDIA');
+
+
+INSERT INTO kendaraan (id_kendaraan, merk, warna, status_kdr, harga_sewa)
+    ->     VALUES
+    ->     ('KDR001', 'TOYOTA', 'HITAM', 'TERSEDIA', '100000'),
+    ->     ('KDR002', 'HYUNDAI', 'SILVER', 'TIDAK TERSEDIA', '500000'),
+    ->     ('KDR003', 'HONDA', 'MERAH', 'TERSEDIA', '300000'),
+    ->     ('KDR004', 'SUZUKI', 'HITAM', 'TIDAK TERSEDIA', '600000'),
+    ->     ('KDR005', 'PORSCHE', 'UNGUN', 'TERSEDIA', '3000000');
+
+
+ INSERT INTO transaksi (id_transaksi, id_customer, id_sopir, id_kendaraan, tgl_pembayaran, tgl_sewa, tgl_kembali, status_transaksi, total_harga, metode_pembayaran)
+    ->     VALUES
+    ->     ('01', 'CS002', 'SP001', 'KDR004', '2023-01-02', '2023-01-02', '2023-01-03', 'SELESAI', '600000', 'CASH'),
+    ->     ('02', 'CS004', 'SP003', 'KDR005', '2023-02-05', '2023-02-05', '2023-02-06', 'SELESAI', '3000000', 'KREDIT'),
+    ->     ('03', 'CS005', 'SP004', 'KDR003', '2023-03-20', '2023-03-21', '2023-03-22', 'SELESAI', '600000', 'CASH'),
+    ->     ('04', 'CS003', 'SP001', 'KDR005', '2023-11-15', '2023-12-15', '2023-12-16', 'SELESAI', '6000000', 'CASH'),
+    ->     ('05', 'CS001', 'SP002', 'KDR001', '2023-05-05', '2023-05-06', '2023-05-07', 'SELESAI', '200000', 'DEBIT'),
+    ->     ('06', 'CS002', 'SP001', 'KDR005', '2023-06-17', '2023-06-17', '2023-06-18', 'SELESAI', '6000000', 'CASH');
+
+```
+
+> **Create** : Fungsi ini digunakan untuk menambahkan data baru ke dalam database menggunakan perintah SQL `INSERT INTO <table> (field1, ..., fieldn) VALUES (value1, ..., valuen)`. Dengan fungsi ini, kita dapat menambahkan data baru ke dalam database.
+
+
+#### Read
+```sql
+SELECT * FROM customer;
+
+![2](https://github.com/Aliyahasmarani/rental_mobilgadungan/assets/115197672/27632572-f360-4177-af21-6ead89953dee)
+
+SELECT * FROM sopir;
+
+
+![3](https://github.com/Aliyahasmarani/rental_mobilgadungan/assets/115197672/e517d0bf-6f01-4063-aac4-ca2f4d4012d5)
+
+
+SELECT * FROM kendaraan;
+
+![4](https://github.com/Aliyahasmarani/rental_mobilgadungan/assets/115197672/7004e647-48f0-4dff-a3b2-66cdcd1e71ca)
+
+SELECT * FROM transaksi;
+
+![5](https://github.com/Aliyahasmarani/rental_mobilgadungan/assets/115197672/b9a3c03d-652c-4932-9b0f-19dc9a647704)
+```
+
+> **Read** : Fungsi ini digunakan untuk membaca data dari database menggunakan perintah SQL `SELECT * FROM <table>`. Dengan fungsi ini, kita dapat membaca data yang sudah tersimpan dalam database sebelumnya yaitu data Kendaraan, Sopir, Customer, Transaksi, dan Laporan_Transaksi.
+
