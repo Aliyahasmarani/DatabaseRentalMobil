@@ -42,4 +42,67 @@
 > 3. Relasi one-to-many antara entitas **Customer** dengan entitas **Transaksi**.
 
 
+### DDL Rental Mobil
+#### 1. Membuat Database
+```sql
+CREATE DATABASE RentalMobil;
+```
+> Untuk membuat database gunakan perintah: `CREATE DATABASE [nama_database];`.
 
+#### 2. Masuk ke dalam database menggunakan perintah USE
+```sql
+USE rentalmobil;
+```
+> Perintah `USE`, digunakan untuk masuk kedalam database, atau
+berganti ke database lain.
+
+#### 3. Membuat Tabel
+```sql
+CREATE TABLE customer (
+    id_customer VARCHAR (10) PRIMARY KEY,
+    nama_cs VARCHAR (45),
+    no_hp INT (15),
+    alamat VARCHAR (45),
+    email VARCHAR (45));
+
+CREATE TABLE sopir (
+    id_sopir VARCHAR (10) PRIMARY KEY,
+    id_kendaraan VARCHAR (10),
+    nama_sp VARCHAR (45),
+    status_sp ENUM ('TERSEDIA', 'TIDAK TERSEDIA') NOT NULL);
+
+CREATE TABLE kendaraan (
+    id_kendaraan VARCHAR (10) PRIMARY KEY,
+    merk VARCHAR (45),
+    warna VARCHAR (45),
+    status_kdr ENUM ('TERSEDIA', 'TIDAK TERSEDIA') NOT NULL,
+    harga_sewa INT);
+
+CREATE TABLE transaksi (
+    id_transaksi VARCHAR (10) PRIMARY KEY,
+    id_customer VARCHAR (10),
+    id_sopir VARCHAR (10),
+    id_kendaraan VARCHAR (10),
+    tgl_pembayaran DATE,
+    tgl_sewa DATE,
+    tgl_kembali DATE,
+    status_transaksi VARCHAR (45),
+    total_harga INT,
+    metode_pembayaran VARCHAR (45));
+```
+
+> Sebelum membuat Tabel, pastikan database aktif yang digunakan dengan terlebih dahulu masuk kedalam databasenya, dengan perintah `USE`.
+>
+> Dalam script di atas, telah dibuat tabel-tabel sesuai dengan skema ERD yang telah disebutkan. Tabel-tabel tersebut antara lain: Kendaraan, Sopir, Customer, Transaksi, dan Laporan_Transaksi.
+>
+> Setiap tabel memiliki kolom-kolom yang sesuai dengan atribut-atribut yang terdapat dalam skema ERD, dan beberapa di antaranya memiliki tipe data yang sesuai seperti `VARCHAR`, `INT`, `ENUM`, dan `DATE`. Tabel-tabel tersebut juga saling memiliki relasi.
+
+
+#### 5. Menampilkan Struktur Tabel
+```sql
+DESC Kendaraan;
+DESC sopir;
+DESC customer;
+DESC transaksi;
+```
+![image](https://github.com/Aliyahasmarani/rental_mobilgadungan/assets/115197672/3c384364-bd03-472e-9109-814744b5854f)
