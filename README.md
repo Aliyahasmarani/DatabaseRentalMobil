@@ -171,3 +171,44 @@ SELECT * FROM transaksi;
 
 > **Read** : Fungsi ini digunakan untuk membaca data dari database menggunakan perintah SQL `SELECT * FROM <table>`. Dengan fungsi ini, kita dapat membaca data yang sudah tersimpan dalam database sebelumnya yaitu data Kendaraan, Sopir, Customer, Transaksi, dan Laporan_Transaksi.
 
+### UPDATE
+```
+ UPDATE customer SET email = 'sahrul@gmail.com' WHERE id_customer = 'CS001';
+```
+![6](https://github.com/Aliyahasmarani/rental_mobilgadungan/assets/115197672/ddc6f435-9053-4309-97ec-93292acd8eb0)
+
+```
+UPDATE sopir SET status_sp = 'TERSEDIA' WHERE id_sopir = 'SP004';
+```
+![7](https://github.com/Aliyahasmarani/rental_mobilgadungan/assets/115197672/b789f4d6-4432-49ec-9005-9903b46c3a4f)
+```
+UPDATE kendaraan SET warna = 'BIRU' WHERE id_kendaraan = 'KDR005';
+```
+![8](https://github.com/Aliyahasmarani/rental_mobilgadungan/assets/115197672/6da833a2-76c4-40ae-b95c-bc375dd5a370)
+```
+UPDATE transaksi SET metode_pembayaran = 'CASH' WHERE id_transaksi = '02';
+```
+![9](https://github.com/Aliyahasmarani/rental_mobilgadungan/assets/115197672/1024a7c1-8d06-4fc5-8b3b-e1a72546f86a)
+
+> **Update** : Fungsi ini digunakan untuk memperbarui data yang sudah ada di dalam database menggunakan perintah SQL `UPDATE <table> SET field1=val1, ..., fieldn=valn WHERE <kondisi>`. Dengan fungsi ini, kita dapat mengubah data yang sudah tersimpan dalam database.
+
+
+### DELETE
+```
+DELETE FROM customer WHERE id_customer='CS006';
+```
+![10](https://github.com/Aliyahasmarani/rental_mobilgadungan/assets/115197672/1561ecb3-2e4d-47fc-be85-2796b9cc42a0)
+```
+DELETE FROM sopir WHERE id_sopir='SP005';
+```
+![11](https://github.com/Aliyahasmarani/rental_mobilgadungan/assets/115197672/d07ec695-aa2c-4ebc-88ef-c3f0cf1b8c52)
+```
+DELETE FROM kendaraan WHERE id_kendaraan='KDR002';
+```
+![12](https://github.com/Aliyahasmarani/rental_mobilgadungan/assets/115197672/4b1995c7-ebf9-4254-8af4-2eced6e236e4)
+```
+DELETE FROM transaksi WHERE id_transaksi='01';
+```
+![13](https://github.com/Aliyahasmarani/rental_mobilgadungan/assets/115197672/96e5ed74-45e6-4fe6-b821-3977590fe33a)
+
+> **Delete** : Fungsi ini digunakan untuk menghapus data yang sudah ada di dalam database menggunakan perintah SQL `DELETE FROM <table> WHERE <kondisi>`. Dengan fungsi ini, kita dapat menghapus data yang sudah tersimpan dalam database.
