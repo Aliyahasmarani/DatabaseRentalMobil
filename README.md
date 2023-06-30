@@ -106,3 +106,4 @@ DESC customer;
 DESC transaksi;
 ```
 ![image](https://github.com/Aliyahasmarani/rental_mobilgadungan/assets/115197672/3c384364-bd03-472e-9109-814744b5854f)
+
