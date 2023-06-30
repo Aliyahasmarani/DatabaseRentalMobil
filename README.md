@@ -42,21 +42,21 @@
 > 3. Relasi one-to-many antara entitas **Customer** dengan entitas **Transaksi**.
 
 
-### DDL Rental Mobil
-#### 1. Membuat Database
+# DDL 
+### 1. Membuat Database
 ```sql
 CREATE DATABASE RentalMobil;
 ```
 > Untuk membuat database gunakan perintah: `CREATE DATABASE [nama_database];`.
 
-#### 2. Masuk ke dalam database menggunakan perintah USE
+### 2. Masuk ke dalam database menggunakan perintah USE
 ```sql
 USE rentalmobil;
 ```
 > Perintah `USE`, digunakan untuk masuk kedalam database, atau
 berganti ke database lain.
 
-#### 3. Membuat Tabel
+### 3. Membuat Tabel
 ```sql
 CREATE TABLE customer (
     id_customer VARCHAR (10) PRIMARY KEY,
@@ -98,7 +98,7 @@ CREATE TABLE transaksi (
 > Setiap tabel memiliki kolom-kolom yang sesuai dengan atribut-atribut yang terdapat dalam skema ERD, dan beberapa di antaranya memiliki tipe data yang sesuai seperti `VARCHAR`, `INT`, `ENUM`, dan `DATE`. Tabel-tabel tersebut juga saling memiliki relasi.
 
 
-#### 5. Menampilkan Struktur Tabel
+### 4. Menampilkan Struktur Tabel
 ```sql
 DESC Kendaraan;
 DESC sopir;
@@ -107,6 +107,13 @@ DESC transaksi;
 ```
 ![image](https://github.com/Aliyahasmarani/rental_mobilgadungan/assets/115197672/3c384364-bd03-472e-9109-814744b5854f)
 
+### 5. MENAMBAHKAN INDEX KEY
+```
+ALTER TABLE transaksi ADD CONSTRAINT FOREIGN KEY (id_customer) REFERENCES customer (id_customer);
+ALTER TABLE transaksi ADD CONSTRAINT FOREIGN KEY (id_sopir) REFERENCES sopir (id_sopir);
+ALTER TABLE transaksi ADD CONSTRAINT FOREIGN KEY (id_kendaraan) REFERENCES kendaraan (id_kendaraan);
+ALTER TABLE sopir ADD CONSTRAINT fk_sopir_id_kend FOREIGN KEY (id_kendaraan) REFERENCES kendaraan (id_kendaraan);
+```
 ### CREATE
 ```sql
 INSERT INTO customer (id_customer, nama_cs, no_hp, alamat, email)
