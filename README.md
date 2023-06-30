@@ -16,7 +16,7 @@
 |2|ER-D Rental Mobil|[Click Here](#ERD)|
 |3|DDL Rental Mobil|[Click Here](#DDL)|
 |4|SQL CRUD Rental Mobil|[Click Here](#SQL_CRUD)|
-|5|SQL JOIN Rental Mobil|[Click Here](#SQLJOIN)|
+|5|SQL JOIN Rental Mobil|[Click Here](#SQL_JOIN)|
 |6|Presentasi (Link Youtube)|[Click Here](https://youtu.be/zhFQsQt_oRs)|
 
 # PERINTAH
