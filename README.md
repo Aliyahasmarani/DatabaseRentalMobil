@@ -12,11 +12,11 @@
 ## DAFTAR ISI <br>
 | No | Description | Link |
 |-----|------|-----|
-|1|Perintah|[Click Here](#perintah)|
-|2|ER-D Rental Mobil|[Click Here](#er-d-rental-mobil)|
-|3|DDL Rental Mobil|[Click Here](#ddl-rental-mobil)|
-|4|SQL CURD Rental Mobil|[Click Here](#sql-curd-rental-mobil)|
-|5|SQL Join Rental Mobil|[Click Here](#sql-join-rental-mobil)|
+|1|Perintah|[Click Here](#PERINTAH)|
+|2|ER-D Rental Mobil|[Click Here](#ERD)|
+|3|DDL Rental Mobil|[Click Here](#DDL)|
+|4|SQL CURD Rental Mobil|[Click Here](#SQL_CRUD)|
+|5|SQL Join Rental Mobil|[Click Here](#SQLJOIN)|
 |6|Presentasi (Link Youtube)|[Click Here](https://youtu.be/zhFQsQt_oRs)|
 
 # PERINTAH
