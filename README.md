@@ -17,7 +17,7 @@
 |3|DDL Rental Mobil|[Click Here](#DDL)|
 |4|SQL CRUD Rental Mobil|[Click Here](#SQL_CRUD)|
 |5|SQL JOIN Rental Mobil|[Click Here](#SQL_JOIN)|
-|6|Presentasi (Link Youtube)|[Click Here]((https://youtu.be/l0ZMBz-4NMI))|
+|6|Presentasi (Link Youtube)|[Click Here](https://youtu.be/l0ZMBz-4NMI)|
 
 # PERINTAH
 ![image](https://github.com/AnggitaRisqiNC/Rental-Mobil/blob/main/screenshot/Perintah%20Soal.png)
