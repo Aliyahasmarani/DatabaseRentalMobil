@@ -265,3 +265,6 @@ SELECT * FROM Transaksi
     -> LEFT OUTER JOIN Customer ON Transaksi.id_customer = Customer.id_customer;
 ```
 ![17](https://github.com/Aliyahasmarani/rental_mobilgadungan/assets/115197672/98b87e9f-88f3-4f3a-8abe-01a37b041103)
+
+
+[BACK->DAFTAR_ISI](#daftar-isi)
